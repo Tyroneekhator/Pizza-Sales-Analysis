@@ -7,7 +7,7 @@
 - [Columns in the dataset](#columns-in-the-dataset)
 - [Tools Used](#tools-used)
 - [Data cleaning and transformation process](#data-cleaning-and-transformation-process)
-    -  [Data SQL Process](#data-SQL-Process)
+    -  [Data transformation in SQL](#data-transformation-in-sql)
     - [Data cleaning in Excel](#data-cleaning-in-excel)
 - [Key point indicators requirements in SQL and Excel](#key-point-indicators-requirements-in-sql-and-excel)
 - [Insights gotten via SQL](#insights-gotten-via-sql)
@@ -48,7 +48,7 @@ The project's objective is to help look at the trends in the dataset; followed b
 - SQL: Structured Query Language is a domain-specific language used to manage data, especially in a relational database management system. It is beneficial in handling structured data, i.e., data incorporating relations among entities and variables
 - Excel: A spreadsheet software
 ## Data cleaning and transformation process
-### Data SQL Process
+### Data transformation in SQL
 1. CSV file which shall be put in SQL Server Management Studio
 2. Create a new database
 3. Import flat file
