@@ -104,13 +104,39 @@ ORDER BY DATEPART(HOUR,order_time)<br />
       SELECT pizza_category,SUM(total_price)* 100/(SELECT sum(total_price) FROM pizza_sales) AS Percentage_Total<br />
       FROM pizza_sales<br />
       GROUP BY pizza_category<br />![Screenshot (453)](https://github.com/Tyroneekhator/Pizza-Sales-Analysis/assets/72547969/bdac269e-bcba-407d-9c61-3becc0472ccd)
-  
 9.	Percentage of Sales by Pizza Size<br />
 -- SQL query for percentage of sales by pizza size<br /><br />
 SELECT pizza_size,SUM(total_price) as total_revenue,SUM(total_price)*100/(SELECT SUM(total_price) From pizza_sales) AS percentage_total<br />
 FROM pizza_sales<br />
 GROUP BY pizza_size<br />
 ![Screenshot (456)](https://github.com/Tyroneekhator/Pizza-Sales-Analysis/assets/72547969/a2c0ff92-c597-438b-9293-5c001e1cf98d)
+10.	Total Pizzas Sold by Pizza Category
+- -- Sql query for Total Pizzas Sold by Pizza Category<br /><br />
+SELECT pizza_category,SUM(quantity) as pizzas_sold<br />
+FROM pizza_sales<br />
+GROUP BY pizza_category<br />
+![Screenshot (457)](https://github.com/Tyroneekhator/Pizza-Sales-Analysis/assets/72547969/2eae36c0-7920-4317-b9c0-36ccf8e3214d)
+11.	Top 5 best sellers by total pizzas sold:
+-- SQL query for Total Pizzas Sold by Pizza Category<br /><br />
+         SELECT TOP 5 pizza_name, SUM(quantity) as pizzas_sold<br />
+         FROM pizza_sales<br />
+         Group by pizza_name<br />
+         ORDER BY pizzas_sold DESC<br />![Screenshot (458)](https://github.com/Tyroneekhator/Pizza-Sales-Analysis/assets/72547969/0212effe-3f92-4629-b24f-a16b2557e7f8)
+12.	Top 5 worst sellers by total pizzas sold:
+- -- Sql query for Total Pizzas Sold by Pizza Category<br /><br />
+         SELECT TOP 5 pizza_name, SUM(quantity) as pizzas_sold<br />
+         FROM pizza_sales<br />
+         Group by pizza_name<br />
+         ORDER BY pizzas_sold ASC<br />
+         ![Screenshot (459)](https://github.com/Tyroneekhator/Pizza-Sales-Analysis/assets/72547969/91a0d4e0-ff39-42f4-b8c8-f475b2fc888d)
+
+
+         
+
+         
+
+
+
 
 
 
