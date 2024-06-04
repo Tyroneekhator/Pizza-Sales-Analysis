@@ -30,9 +30,38 @@ The project's objective is to help look at the trends in the dataset; followed b
 - pizza ingredients: the ingredients that make up the pizza
 - pizza name: the name of the pizza
 ## Tools Used
-- SQL: 
-- Excel:
+- SQL: Structured Query Language is a domain-specific language used to manage data, especially in a relational database management system. It is beneficial in handling structured data, i.e., data incorporating relations among entities and variables
+- Excel: A spreadsheet software
 ## Data cleaning and transformation process
-## Stakeholder and key point indicators
+### Data SQL Process
+1. CSV file which shall be put in SQL Server Management Studio
+2. Create a new database
+3. Import flat file
+4. Change data types
+   - nvarchar(50) ---> varchar(50)
+   - pizza_ingredients nvarchar(50)  ---> varchar(200)
+   - pizza_id small init to init
+   - Order_id small init to init
+### Data cleaning in Excel
+1. Change column values
+     - S - Small
+     - M - Medium
+     - L - Large
+     - XL - Extra large
+     - XXL - Extra Extra Large
+  - Method uses the IFS statement function in the helper column
+  - R=Then copy and paste values in the original column then delete the helper column.
+## Key point indicators requirements in SQL and Excel
+These are the questions that need to be answered to measure the success rate of the business.
+1. Total revenue: The sum of the total price of all pizza orders.
+2. Average Order Value: the average amount spent per order, calculated by dividing the total revenue by the total number of orders
+3. Total pizzas sold: The sum of the quantities sold.
+4. Total orders: The total number of orders placed.
+5. Average pizzas per order: The average number of pizzas sold per order, is calculated by dividing the total number of pizzas sold by the total number of orders.
+6. Total number of orders placed by days of the week.
+7. Hourly trend for numbers of pizzas ordered.
+8. Percentage of sales by pizza category
+9. Percentage of sales by pizza size
+10. Total pizzas
 ## Insights gotten
 ## Recommendations based on the analysis
