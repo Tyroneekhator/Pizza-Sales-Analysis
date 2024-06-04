@@ -131,29 +131,28 @@ GROUP BY pizza_category<br />
          ![Screenshot (459)](https://github.com/Tyroneekhator/Pizza-Sales-Analysis/assets/72547969/91a0d4e0-ff39-42f4-b8c8-f475b2fc888d)
 ## Insights gotten via Excel
 Now when discussing the insights obtained from Excel via exploratory data analysis; that is use charts to see the trends and comparisons that can be found in the data set concerning the KPI requirements.
-1.  ![pizza sales](https://github.com/Tyroneekhator/Pizza-Sales-Analysis/assets/72547969/4c45335a-e3bd-4d9c-a091-c546e8867958)
-
-
-         
-
-
-
-
-
-
-
-
-
-      
-
-
-
-
-      
-
-
-
-
-
+1. Now based on the image the total revenue; is the average order value; the total number of pizzas sold; total orders and the average pizzas per order <br />![pizza sales](https://github.com/Tyroneekhator/Pizza-Sales-Analysis/assets/72547969/4c45335a-e3bd-4d9c-a091-c546e8867958)
+2. The bar chart shows that most orders are placed on Friday with the least being on Monday <br />
+![Daily trend of orders placed](https://github.com/Tyroneekhator/Pizza-Sales-Analysis/assets/72547969/6fdfe1cd-4c0f-4ba9-a523-9e2ab29c265a)
+3. Hourly trend customer visualization explains that the busiest times are 12 pm to 1 pm and 5 pm to 6 pm respectively with more orders being placed in the afternoon than in the evening.<br />
+![hourly trend of orders placed by customers](https://github.com/Tyroneekhator/Pizza-Sales-Analysis/assets/72547969/9df796ec-fe97-488c-9e9c-65de4bdc4129)
+4. Percentage (%) of sales by pizza category. The doughnut chart displays which category of pizzas generates the most revenue. In ranked order respectively:
+   - Classic 26.91%
+   - Supreme 25.46%
+   - Chicken 23.96%
+   - Veggie 23.96%
+<br  /> <br /> ![percentage of sales by pizza category](https://github.com/Tyroneekhator/Pizza-Sales-Analysis/assets/72547969/8f3174a3-7087-4a0f-9b6f-70b0144529c9)
+5. Percent of sales by pizza size. A pie chart explaining what size of pizza brings in the most revenue. In ranked order:
+   - Large 46%
+   - Medium 30%
+   - Small 22%
+   - Extra large 2%
+   - Extra Extra large 0.2%
+<br /> <br /> ![percentage (%) of sales by pizza size](https://github.com/Tyroneekhator/Pizza-Sales-Analysis/assets/72547969/b2e32d32-892f-4abe-bcb8-66dcc6467386)
+6. Total pizzas sold by category. A waterfall chart is created to show the most sold quantity of pizzas by category.<br /><br />![total pizzas sold by category](https://github.com/Tyroneekhator/Pizza-Sales-Analysis/assets/72547969/a903f460-0090-4d01-b704-df9acddbd916)
+7. Top 5 best sellers by total pizzas sold <br /><br />![top 5 best seller by total pizzas sold](https://github.com/Tyroneekhator/Pizza-Sales-Analysis/assets/72547969/41143628-b8af-4c31-b939-d153e51ff8da)
+8. Top 5 worst sellers by total pizzas sold<br /><br />![Bottom 5 worst sellers by total pizzas sold](https://github.com/Tyroneekhator/Pizza-Sales-Analysis/assets/72547969/ce500e85-b803-410f-81d4-8e0fd2cb208e)
+9. A timeline is used to filter data by order date. <br /> <br /> ![pizza filter](https://github.com/Tyroneekhator/Pizza-Sales-Analysis/assets/72547969/26bf1a49-ac82-491f-b302-177d8105e18d)
 
 ## Recommendations based on the analysis
+
