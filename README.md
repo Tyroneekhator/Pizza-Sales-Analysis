@@ -50,7 +50,7 @@ The project's objective is to help look at the trends in the dataset; followed b
      - XL - Extra large
      - XXL - Extra Extra Large
   - Method uses the IFS statement function in the helper column
-  - R=Then copy and paste values in the original column then delete the helper column.
+  - Then copy and paste values in the original column then delete the helper column.
 ## Key point indicators requirements in SQL and Excel
 These are the questions that need to be answered to measure the success rate of the business.
 1. Total revenue: The sum of the total price of all pizza orders.
