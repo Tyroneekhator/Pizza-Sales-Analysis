@@ -123,15 +123,16 @@ GROUP BY pizza_category<br />
          Group by pizza_name<br />
          ORDER BY pizzas_sold DESC<br />![Screenshot (458)](https://github.com/Tyroneekhator/Pizza-Sales-Analysis/assets/72547969/0212effe-3f92-4629-b24f-a16b2557e7f8)
 12.	Top 5 worst sellers by total pizzas sold:
-- -- Sql query for Total Pizzas Sold by Pizza Category<br /><br />
+- -- SQL query for Total Pizzas Sold by Pizza Category<br /><br />
          SELECT TOP 5 pizza_name, SUM(quantity) as pizzas_sold<br />
          FROM pizza_sales<br />
          Group by pizza_name<br />
          ORDER BY pizzas_sold ASC<br />
          ![Screenshot (459)](https://github.com/Tyroneekhator/Pizza-Sales-Analysis/assets/72547969/91a0d4e0-ff39-42f4-b8c8-f475b2fc888d)
+## Insights gotten via Excel
+Now when discussing the insights obtained from Excel via exploratory data analysis; that is use charts to see the trends and comparisons that can be found in the data set concerning the KPI requirements.
+1.  ![pizza sales](https://github.com/Tyroneekhator/Pizza-Sales-Analysis/assets/72547969/4c45335a-e3bd-4d9c-a091-c546e8867958)
 
-
-         
 
          
 
