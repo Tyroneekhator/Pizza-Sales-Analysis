@@ -7,7 +7,8 @@
 ## project overview
 The project's objective is to help look at the trends in the dataset; followed by comparing which pizza type and size brings in the most sales and lastly looking at the best and worst sellers in the pizza dataset. Additionally, the data source is a CSV file but KPI questions are answered firstly with SQL then Excel with each metric for the pizzeria being visualized. Lastly, the insights from the analysis will be explained with recommendations given.
 ## Dashboard
-![Pizza Sales Dashboard](https://github.com/Tyroneekhator/Pizza-Sales-Analysis/assets/72547969/f5955811-a941-4c19-ae25-05103408790e)
+![Screenshot (471)](https://github.com/Tyroneekhator/Pizza-Sales-Analysis/assets/72547969/2583780e-11c6-4f37-a75d-29d0966c47a9)
+
 
 ## Data Sources Used
 - A CSV file
@@ -155,4 +156,4 @@ Now when discussing the insights obtained from Excel via exploratory data analys
 9. A timeline is used to filter data by order date. <br /> <br /> ![pizza filter](https://github.com/Tyroneekhator/Pizza-Sales-Analysis/assets/72547969/26bf1a49-ac82-491f-b302-177d8105e18d)
 
 ## Recommendations based on the analysis
-
+The best recommendation one can give like most pizzerias is to provide meal deals, discounts and offers to promote sales for all pizza sizes and categories.
