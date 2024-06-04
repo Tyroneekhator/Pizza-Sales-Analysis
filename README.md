@@ -50,7 +50,7 @@ The project's objective is to help look at the trends in the dataset; followed b
      - XL - Extra large
      - XXL - Extra Extra Large
   - Method uses the IFS statement function in the helper column
-  - Then copy and paste values in the original column then delete the helper column.
+  - Copy and paste values in the original column then delete the helper column.
 ## Key point indicators requirements in SQL and Excel
 These are the questions that need to be answered to measure the success rate of the business.
 1. Total revenue: The sum of the total price of all pizza orders.
@@ -60,8 +60,51 @@ These are the questions that need to be answered to measure the success rate of 
 5. Average pizzas per order: The average number of pizzas sold per order, is calculated by dividing the total number of pizzas sold by the total number of orders.
 6. Total number of orders placed by days of the week.
 7. Hourly trend for numbers of pizzas ordered.
-8. Percentage of sales by pizza category
-9. Percentage of sales by pizza size
-10. Total pizzas
-## Insights gotten
+8. Percentage of sales by pizza category.
+9. Percentage of sales by pizza size.
+10. Total pizzas sold by pizza category.
+11. Top 5 best sellers by total pizzas sold.
+12. Top 5 worst sellers by total pizzas sold.
+## Insights gotten via SQL
+show the SQL queries written to answer KPI requirements. A Word document version will be provided
+1. Total Revenue: Total sum of the total price of all pizza orders.
+   - -- SQL query to get total revenue: the sum price of all the pizzas ordered.<br />
+         SELECT SUM(total_price) AS Total_Revenue <br />
+         FROM pizza_sales <br /> <br /> ![Screenshot (447)](https://github.com/Tyroneekhator/Pizza-Sales-Analysis/assets/72547969/cec98c7e-a67b-4a69-bbaf-b9aa6ab43573)
+2. Average order Value: The average amount spent per order, calculated by dividing the total revenue by the total number of orders.
+   - -- SQL query to get the average spent per order: Average order Value That is the average amount spent per order <br />
+      SELECT SUM(total_price)/ COUNT(DISTINCT order_id) AS Average_Order_Price <br />
+      FROM pizza_sales <br /> ![Screenshot (448)](https://github.com/Tyroneekhator/Pizza-Sales-Analysis/assets/72547969/6b855c01-a926-4c6e-acd1-914d8c8cd0a6)
+3. Total Pizzas Sold: The Sum of the quantities of all pizzas sold. 
+- -- SQL query total pizzas sold: The sum of the qualities of all of the pizzas sold<br />
+      SELECT SUM(quantity) as Total_Pizza_Sold<br />
+      FROM pizza_sales <br />![Screenshot (449)](https://github.com/Tyroneekhator/Pizza-Sales-Analysis/assets/72547969/b49d8507-8a38-479c-9b45-37b8d6491a79)
+4. Total Orders: The total number of orders placed. <br />
+- -- SQL query total orders: The total number of orders placed. <br />
+SELECT COUNT(DISTINCT order_id) as total_numbers_of_orders_placed <br />
+FROM pizza_sales <br />![Screenshot (450)](https://github.com/Tyroneekhator/Pizza-Sales-Analysis/assets/72547969/966f4c1e-cf0e-4dde-80b8-be690a1df0d6)
+5. Average Pizzas Per Order: The average number of pizzas sold per order, is calculated by dividing the total number of pizzas sold by the total number of orders.
+  - -- SQL query Average Pizzas Per Order: The average number of pizzas sold per order <br />
+      SELECT SUM(Quantity)/COUNT(DISTINCT order_id) as average_number_of_pizza_sold_per_order<br />
+      FROM pizza_sales<br />![Screenshot (451)](https://github.com/Tyroneekhator/Pizza-Sales-Analysis/assets/72547969/26a59cc6-b998-40f0-80c5-af23b4c0cbdb)
+6.	Total number of orders placed by days of the week.
+- -- Sql query total number of orders by days of the week <br />
+SELECT DATENAME(DW,order_date) as order_day,COUNT(DISTINCT order_id) AS Total_Orders<br />
+FROM pizza_sales<br />
+GROUP BY DATENAME(DW,order_date)<br />![Screenshot (452)](https://github.com/Tyroneekhator/Pizza-Sales-Analysis/assets/72547969/a7c6442b-004e-4a63-8de0-eb9822287d50)
+
+
+
+      
+
+
+
+
+      
+
+
+
+
+
+
 ## Recommendations based on the analysis
