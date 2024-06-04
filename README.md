@@ -88,10 +88,32 @@ FROM pizza_sales <br />![Screenshot (450)](https://github.com/Tyroneekhator/Pizz
       SELECT SUM(Quantity)/COUNT(DISTINCT order_id) as average_number_of_pizza_sold_per_order<br />
       FROM pizza_sales<br />![Screenshot (451)](https://github.com/Tyroneekhator/Pizza-Sales-Analysis/assets/72547969/26a59cc6-b998-40f0-80c5-af23b4c0cbdb)
 6.	Total number of orders placed by days of the week.
-- -- Sql query total number of orders by days of the week <br /><br />
+- -- SQL query total number of orders by days of the week <br /><br />
 SELECT DATENAME(DW,order_date) as order_day,COUNT(DISTINCT order_id) AS Total_Orders<br />
 FROM pizza_sales<br />
 GROUP BY DATENAME(DW,order_date)<br />![Screenshot (452)](https://github.com/Tyroneekhator/Pizza-Sales-Analysis/assets/72547969/a7c6442b-004e-4a63-8de0-eb9822287d50)
+7. Hourly trend for  the number of pizzas ordered.
+- -- SQL query for hourly trend of pizzas ordered<br /><br />
+SELECT DATEPART(HOUR,order_time) as order_hours,COUNT(DISTINCT order_id) AS Total_Orders<br />
+FROM pizza_sales<br />
+GROUP BY DATEPART(HOUR,order_time)<br />
+ORDER BY DATEPART(HOUR,order_time)<br />
+![Screenshot (454)](https://github.com/Tyroneekhator/Pizza-Sales-Analysis/assets/72547969/2bf10f08-4ed9-47f4-883c-a7e6d399d5cb)
+8.	Percentage of sales by pizza category
+-- SQL query for percentage of sales by pizza category<br /><br />
+      SELECT pizza_category,SUM(total_price)* 100/(SELECT sum(total_price) FROM pizza_sales) AS Percentage_Total<br />
+      FROM pizza_sales<br />
+      GROUP BY pizza_category<br />![Screenshot (453)](https://github.com/Tyroneekhator/Pizza-Sales-Analysis/assets/72547969/bdac269e-bcba-407d-9c61-3becc0472ccd)
+  
+9.	Percentage of Sales by Pizza Size<br />
+-- SQL query for percentage of sales by pizza size<br /><br />
+SELECT pizza_size,SUM(total_price) as total_revenue,SUM(total_price)*100/(SELECT SUM(total_price) From pizza_sales) AS percentage_total<br />
+FROM pizza_sales<br />
+GROUP BY pizza_size<br />
+![Screenshot (456)](https://github.com/Tyroneekhator/Pizza-Sales-Analysis/assets/72547969/a2c0ff92-c597-438b-9293-5c001e1cf98d)
+
+
+
 
 
 
