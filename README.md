@@ -81,7 +81,7 @@ These are the questions that need to be answered to measure the success rate of 
 11. Top 5 best sellers by total pizzas sold.
 12. Top 5 worst sellers by total pizzas sold.
 ## Insights gotten via SQL
-Show the SQL queries written to answer KPI requirements. A Word document version will be provided
+Show the SQL queries written to answer KPI requirements. A Word document version is also available.
 1. Total Revenue: Total sum of the total price of all pizza orders.
    - -- SQL query to get total revenue: the sum price of all the pizzas ordered.<br /><br />
          SELECT SUM(total_price) AS Total_Revenue <br />
